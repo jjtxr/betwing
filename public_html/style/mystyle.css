@@ -1,0 +1,275 @@
+body {
+	font-family: 'Exo', Helvetica, Arial, sans-serif;
+	background: url(../image/_texture.png) repeat;
+}
+a:visited, a:link, a:hover{
+	text-decoration: none;
+}
+/*---------------------- Header --------------------*/
+.topContent{
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	position: fixed;
+    top: 0;
+	z-index: 99;
+}
+/*---------------------- Navbar #1 --------------------*/
+.header{
+	background-color: #191919;
+	height: 24px;
+}
+
+.socialIcon{
+list-style-type: none;
+display: inline-block;
+margin: 0px;
+padding-left: 11.2%;
+ 
+}
+.socialIcon>li{
+float: left;
+padding-top: 2px;
+
+}
+.socialIcon>li>a{
+padding-right: 10px;
+color: #fff;
+text-decoration: none;
+}
+
+.fbc:hover{
+	color: #3b5999;
+}
+
+.twc:hover{
+	color: #55acee;
+}
+
+.stc:hover{
+	color: #34465d;
+}
+ 
+.stats{
+	list-style-type: none;
+	display: inline-block;
+	letter-spacing: 1px;
+	font-size: 12.7px;	
+	color: #E7E7E7;
+	margin-bottom: 0px;
+	padding-left: 26.1%;
+}
+.stats>li{
+		float: right;
+		width: 200px;
+}
+#txt{
+	width: 200px;
+}
+.stlog{
+ 	list-style-type: none;
+ 	display: inline-block;
+	font-size: 9pt;
+	color: #E7E7E7;
+	margin-bottom: 0px;
+	padding-left: 23%;
+}
+.stlog>li{
+float: left;
+
+}
+.stlog>li>a{
+	text-decoration: none;
+	color: #E7E7E7;
+	padding-right: 6px;
+}
+.stlog>li>a:hover{
+	color:#09b83e;
+}
+/*---------------------- Navbar #2 --------------------*/
+.logo{
+	position: absolute;
+	float: left;
+	z-index: 999;
+	width:250px;
+	height: 50px;
+}
+.nav2{
+    list-style:none;
+    margin:0;
+    padding:0;
+    text-align:center;
+	background: #444444;
+	height: 45px;
+	border-bottom: 2px solid #009900;
+}
+.nav2 li{
+    display:inline;
+	text-decoration: none;
+	height: 45px;
+}
+.nav2 a{
+    display:inline-block;
+    padding:10px;
+	font-size: 14px;
+	color: #E1E1E1;
+	font-weight: bold;
+	text-transform: uppercase;
+	height: 45px;
+}
+.nav2 a:hover, a:active{
+    background: #009900;
+	text-decoration: none;
+}
+/*---------------------- mainContent --------------------*/
+.mainContent{
+	margin: 50px 25px 20px 25px;
+	padding: 15px;
+	color: #191919;
+}
+.mainContent h1 {
+	font-family: 'Aldrich', sans-serif;
+	margin-top: 25px;
+	font-size: 30px;
+	line-height: 0.5;
+	text-transform: uppercase;
+	font-weight: 600;
+	text-shadow: 0 1px 0 #ccc,
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
+}
+.mainContent h2 {
+	font-size: 23px;
+	line-height: 0.5;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-shadow: 0 1px 0 #ccc,
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
+}
+.mainContent h3 {
+	font-size: 16px;
+	line-height: 0.1;
+	text-transform: uppercase;
+}
+.row {
+	padding: 5px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+.col-md-6{
+	padding: 10px;
+}
+/* SLIDER */
+#slider {
+  position: relative;
+  overflow: hidden;
+  margin: 20px auto 0 auto;
+  border-radius: 4px;
+}
+
+#slider ul {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  height: 200px;
+  list-style: none;
+}
+
+#slider ul li {
+  position: relative;
+  display: block;
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: 750px;
+  height: 250px;
+  background: #ccc;
+  text-align: center;
+  line-height: 300px;
+}
+/* CLOCK */
+#clockdiv{
+    color: #fff;
+    display: inline-block;
+    font-weight: 700;
+    text-align: center;
+    font-size: 30px;
+	min-width: 500px;
+	position: relative;
+	width: intrinsic;
+}
+
+#clockdiv > div{
+    padding: 5px 10px 5px 10px;
+    border-radius: 3px;
+    display: inline-block;
+	position: relative;
+}
+
+#clockdiv div > span{
+	width: 15px;
+    padding: 20px;
+    border-radius: 3px;
+    background: rgba(96,96,96,0.5);
+    display: inline-block;
+	width: 75px;
+}
+
+.smalltext{
+    font-size: 16px;
+	color: #444444;
+}
+/*---------------------- footerContent --------------------*/
+.footer{
+background-color: #191919;
+color: #fff;
+font-size: 14px;
+width: 100%;
+height: 30px;
+position: fixed;
+bottom: 0;
+z-index: -1;
+text-transform: uppercase;
+font-weight: 700;
+}
+.copyright{
+	float:left;
+	padding-left: 10%;
+	padding-top: 5px;
+}
+.atisda{
+	float: right;
+	padding-right: 10%;
+	padding-top: 5px;
+	text-decoration: none;
+}
+.copyright>a{
+	color: #fff;
+	border: 0px;
+}
+.atisda>a{
+	color: #d99735;
+	border: 0px;
+}
+.atisda>a:hover{
+	text-decoration: none;
+}

@@ -1,0 +1,9 @@
+RewriteEngine on RewriteBase / RewriteRule ^(\w+)$ index.php?page=$1 
+[L,NC,QSA] RewriteRule ^(\w+)+\/$ index.php?page=$1 [L,NC,QSA] 
+RewriteCond %{HTTP_HOST} ^(www\.)(.+) [OR]#Prevent viewing of .htaccess 
+file <Files .htaccess> order allow,deny deny from all </Files> 
+RewriteCond %{HTTPS} off RewriteCond %{HTTP_HOST} ^(www\.)?(.+)#Prevent 
+directory listings Options All -Indexes
+RewriteRule ^ https://%2%{REQUEST_URI} [R=301,L]
+ErrorDocument 404 https://betwing.eu/lost
+ErrorDocument 403 https://betwing.eu/lost
